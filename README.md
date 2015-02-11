@@ -1,10 +1,31 @@
 # Dot files
 Collection of dotfiles
 
+##Whats included
 * bash_profile
 * gitconfig
 * gitignore
 * gitmessage
+
+## Set up
+###To update you bash profile type 
+
+```bash
+nano ~/.bash_profile
+```
+
+and then copy and paste .bash_profile into your version (recommend you take a backup first.)
+
+Next copy .git-prompt.sh into your home directory
+
+Finally reload bash by running the following command
+
+```bash
+source ~/.bash_profile
+```
+
+###Other dotfiles
+To use these you just need to copy them into your home directory and then reload bash.
 
 ##.bash_profile
 
@@ -34,6 +55,7 @@ export EDITOR=/Applications/Sublime\ Text\ 2.app
 
 ### Prompt
 Set up coloured prompt with git branch
+
 ```bash
 # Regular Colors
 RED='\e[0;31m'          # Red
