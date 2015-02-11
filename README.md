@@ -1,9 +1,15 @@
-# Bash-Profile
-My .bash_profile
+# Dot files
+Collection of dotfiles
+
+* bash_profile
+* gitconfig
+* gitexcludes
+
+##.bash_profile
 
 Sets up a few useful aliases, adds a coloured prompt which shows user name, path and current git branch
 
-##Aliases
+###Aliases
 ```bash
 ls                        # Show all files including hidden and use colours
 composer                  # Open composer
@@ -19,13 +25,13 @@ httpHeaders google.com    # Grabs headers from web page
 httpDebug google.com      # Grabs headers from web page              
 ```
 
-##Editor
+###Editor
 Set up default editor
 ```bash
 export EDITOR=/Applications/Sublime\ Text\ 2.app 
 ```
 
-## Prompt
+### Prompt
 Set up coloured prompt with git branch
 ```bash
 # Regular Colors
@@ -41,3 +47,8 @@ WHITE='\e[0;37m'        # White
 source ~/.git-prompt.sh
 PS1="\[$RED\]\u:\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\[$CYAN\]\$(__git_ps1)\[$WHITE\]\$ "
 ```
+
+
+## Git Config
+
+## Git Excludes
