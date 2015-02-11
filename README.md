@@ -3,7 +3,7 @@ Collection of dotfiles
 
 * bash_profile
 * gitconfig
-* gitexcludes
+* gitignore
 * gitmessage
 
 ##.bash_profile
@@ -53,8 +53,8 @@ PS1="\[$RED\]\u:\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\[$CYAN\]\$(__git_
 ## Git Config
 Default git config settings and aliases
 
-## Git Excludes
-Global files to exculde
+## Git Ignore
+Global files to ignore
 
 ## Git Message
 Default commit message template
