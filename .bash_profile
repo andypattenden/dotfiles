@@ -5,7 +5,7 @@ export PATH=/usr/local/bin:$PATH:~/bin/
 export EDITOR=/Applications/Sublime\ Text\ 2.app 
 
 # Aliases
-alias ls="ls -G -d .*" # Show all files including hidden and use colours
+alias ls="ls -G" # Show all files including hidden and use colours
 alias composer="php /usr/bin/composer.phar"
 alias edit='subl' ## edit files in Sublime
 
