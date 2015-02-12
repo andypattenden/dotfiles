@@ -1,0 +1,24 @@
+# Aliases
+alias ls="ls -G" # Show all files including hidden and use colours
+alias composer="php /usr/bin/composer.phar"
+alias edit='subl' ## edit files in Sublime
+
+## Show hide hidden files
+### Commands for OSX 10.9 and 10.10
+alias showHidden='defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder'
+alias hideHidden='defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder'
+
+### Commands for OSX 10.8 and prior
+#alias showHidden='defaults write com.apple.finder AppleShowAllFiles -boolean true ; killall Finder'
+#alias hideHidden='defaults write com.apple.finder AppleShowAllFiles -boolean false ; killall Finder'
+
+
+## Web Development
+alias apacheEdit='edit /etc/httpd/httpd.conf'      # apacheEdit:       Edit httpd.conf
+alias apacheRestart='sudo apachectl graceful'           # apacheRestart:    Restart Apache
+alias editHosts='edit /etc/hosts'                  # editHosts:        Edit /etc/hosts file
+alias herr='tail /var/log/httpd/error_log'              # herr:             Tails HTTP error logs
+alias apacheLogs="less +F /var/log/apache2/error_log"   # Apachelogs:   Shows apache error logs
+httpHeaders () { /usr/bin/curl -I -L $@ ; }             # httpHeaders:      Grabs headers from web page
+httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
+

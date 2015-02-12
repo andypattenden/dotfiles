@@ -1,0 +1,7 @@
+# Paths
+export PATH=/usr/local/bin:$PATH:~/bin/
+
+# Set default editor
+# Add symbolic link to subl first with the following command
+# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+export EDITOR=subl
