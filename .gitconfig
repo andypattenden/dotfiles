@@ -1,6 +1,6 @@
 [user]
-	name = 
-	email = 
+	name =
+	email =
 [color]
 	diff = true
 	ui = auto
@@ -26,6 +26,9 @@
   bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
   graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
   lasttag = describe --tags --abbrev=0
+  logmerged = "!f() { git log ${1-master}..${1-development} --oneline --merges; }; f"
+  logcommits = "!f() { git log ${1-master}..${1-development} --oneline --no-merges; }; f"
+  logmergedall = "!f() { git log ${1-master}..${1-development} --oneline; }; f"
 [apply]
 	whitespace = nowarn
 [color]
